@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Columna 1</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="newIdea" placeholder="Nueva Idea">
+                </div>
+                <button class="btn btn-primary" id="addIdea">Agregar</button>
+                <ul id="ideasList" class="list-group mt-3"></ul>
+            </div>
+            <div class="col">
+                <h3>Columna 2</h3>
+                <canvas id="chart" width="200" height="200"></canvas>
+            </div>
+            <div class="col col-3-border" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Columna 3</h3>
+                <ul id="progressList" class="list-group"></ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

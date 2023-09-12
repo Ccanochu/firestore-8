@@ -1,0 +1,5 @@
+.col-3-border {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    min-height: 200px; /* Ajusta la altura según lo necesites */
+}
